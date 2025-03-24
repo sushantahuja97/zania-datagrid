@@ -21,7 +21,7 @@ const DataGrid = () => {
 
   // Onchange function for select all checkbox
   const handleSelectAll = () => {
-    if (isSomeSelected) {
+    if (isSomeSelected || isAllSelected) {
       setSelectedRows([]);
     } else {
       setSelectedRows(sampleData.map((row, ind) => ind));
